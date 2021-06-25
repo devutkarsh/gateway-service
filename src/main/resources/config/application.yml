@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  
+zuul:
+  routes:
+    destination:
+      sensitiveHeaders:
+      url: http://host.docker.internal:8093
+    dashboard:
+      sensitiveHeaders:
+      url: http://host.docker.internal:8091
+    user:
+      sensitiveHeaders:
+      url: http://host.docker.internal:8092
+
+ribbon:
+  eureka:
+    enabled: false
