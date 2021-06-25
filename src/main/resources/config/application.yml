@@ -3,15 +3,9 @@ server:
   
 zuul:
   routes:
-    destination:
+    blog:
       sensitiveHeaders:
-      url: http://host.docker.internal:8093
-    dashboard:
-      sensitiveHeaders:
-      url: http://host.docker.internal:8091
-    user:
-      sensitiveHeaders:
-      url: http://host.docker.internal:8092
+      url: http://tech.devutkarsh.com
 
 ribbon:
   eureka:
