@@ -1,3 +1,23 @@
+logging: 
+  level: 
+    com.devutkarsh: '${LOG_LEVEL:INFO}'
+    org.springframework.web: '${LIB_LOG_LEVEL:INFO}'
+    org.springframework.integration: '${LIB_LOG_LEVEL:INFO}'
+  basePackage: com.devutkarsh
+
+spring:
+  application:
+    name: api-service
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+management:
+  endpoints:
+     web.base-path: /
+
 server:
   port: 8080
   
@@ -5,7 +25,7 @@ zuul:
   routes:
     blog:
       sensitiveHeaders:
-      url: http://tech.devutkarsh.com
+      url: http://devutkarsh.com
 
 ribbon:
   eureka:

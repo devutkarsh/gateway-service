@@ -34,6 +34,9 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul'
+	implementation 'com.amazonaws:aws-java-sdk-core:1.8.10.2'
+	implementation 'com.auth0:java-jwt:3.17.0'
+
 	
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
