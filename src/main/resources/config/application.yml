@@ -26,6 +26,9 @@ zuul:
     blog:
       sensitiveHeaders:
       url: http://devutkarsh.com
+    http:
+      sensitiveHeaders:
+      url: http://httpbin
 
 ribbon:
   eureka:
